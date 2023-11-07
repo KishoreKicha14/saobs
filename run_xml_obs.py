@@ -388,6 +388,6 @@ def render_it(i):
 	return done
 
 #env.action_space.sample()
-for i in range(200):
+for i in range(5000):
 	print(i, render_it(i))
 torch.save(policy_net.state_dict(), 'sanwo.pth')
